@@ -15,6 +15,7 @@ A new flutter plugin project.
   s.author           = { 'Your Company' => 'email@example.com' }
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
+  s.resources = 'Assets/**/*'
   s.dependency 'Flutter'
   s.dependency 'Stripe', stripe_version
   s.dependency 'StripePaymentSheet', stripe_version

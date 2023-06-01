@@ -11,7 +11,7 @@ import StripePaymentSheet
 extension StripeSdk {
     internal func buildPaymentSheetConfiguration(params: NSDictionary, orderTrackingCallback: RCTResponseSenderBlock? = nil) -> (error: NSDictionary?, configuration: PaymentSheet.Configuration?) {
         var configuration = PaymentSheet.Configuration()
-        
+        configuration.appearance.font.base = UIFont(name: "AeonisLTPro-Regular", size: UIFont.systemFontSize)
         configuration.primaryButtonLabel = params["primaryButtonLabel"] as? String
 
         if let appearanceParams = params["appearance"] as? NSDictionary {
